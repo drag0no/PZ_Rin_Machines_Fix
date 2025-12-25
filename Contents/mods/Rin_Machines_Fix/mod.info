@@ -1,0 +1,7 @@
+poster=generic.png
+require=Machines15
+id=Rin_Machines_Fix
+name=MachinesII Fix
+description=Fixes multiple mod integration issues for B41.78+.
+authors=Rinski
+icon=poster.png

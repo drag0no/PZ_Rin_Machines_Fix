@@ -1,0 +1,51 @@
+module MCH
+{
+	imports
+	{
+		Base,
+	}
+
+    recipe Refill Propane Tank
+    {
+        destroy PropaneTank,
+        PetrolCan=4,
+        AnimNode:RefuelGasCan,
+        NearItem:PropStaner,
+        OnCanPerform:Recipe.OnCanPerform.CheckIfMachinePowered,
+        Result:PropaneTank,
+        Time:25,
+        Sound:CanisterAddFuelFromGasPump,
+        CanBeDoneFromFloor:true,
+        NeedToBeLearn:false,
+        Override:true,
+    }
+
+    recipe Refill Empty Propane Tank
+    {
+        destroy PropaneTankEmpty,
+        PetrolCan=4,
+        AnimNode:RefuelGasCan,
+        NearItem:PropStaner,
+        OnCanPerform:Recipe.OnCanPerform.CheckIfMachinePowered,
+        Result:PropaneTank,
+        Time:25,
+        Sound:CanisterAddFuelFromGasPump,
+        CanBeDoneFromFloor:true,
+        NeedToBeLearn:false,
+    }
+
+    recipe Refill Industrial Propane Tank
+    {
+        destroy LargePropaneTank,
+        PetrolCan=8,
+        AnimNode:RefuelGasCan,
+        NearItem:PropStaner,
+        OnCanPerform:Recipe.OnCanPerform.CheckIfMachinePowered,
+        Result:LargePropaneTank,
+        Time:50,
+        Sound:CanisterAddFuelFromGasPump,
+        CanBeDoneFromFloor:true,
+        NeedToBeLearn:false,
+    }
+
+}

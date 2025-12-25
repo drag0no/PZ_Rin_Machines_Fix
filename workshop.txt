@@ -1,0 +1,10 @@
+version=1
+id=3630473325
+title=MachinesII Fix
+description=Fixes mod integration issues for B41.78+.
+description=
+description=* Refill Propane tank recipes for:
+description=  - Empty Propane Tank from "Food Preservation Plus" mod
+description=  - Industrial Propane Tank from "The Workshop" mod
+tags=Build 41;Balance;Building;Items;Literature;Military;Misc;Models;Multiplayer;Realistic
+visibility=public
