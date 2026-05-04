@@ -48,4 +48,30 @@ module MCH
         NeedToBeLearn:false,
     }
 
+		recipe Forge Metal Sheet
+    {
+		MetalBar=4,
+		keep Hammer,
+		keep WeldingMask,
+		BlowTorch=3,
+
+		Result:SheetMetal=1,
+		Time:600,
+		Category:MetalWelding,
+		SkillRequired:MetalWelding=3,
+    }
+	
+	    recipe Press Metal Bars
+    {
+		MetalBar=4,
+		NearItem:HydraulicPress,
+		AnimNode:Hydraulic,
+		OnCanPerform:Recipe.OnCanPerform.CheckIfMachinePowered,
+		Result:SheetMetal=1,
+		Time:100,
+		Category:Press,
+		Sound:Press,
+		CanBeDoneFromFloor:true,
+		NeedToBeLearn:false,
+    }
 }
