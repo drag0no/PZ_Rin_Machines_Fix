@@ -12,6 +12,7 @@ module MCH
         AnimNode:RefuelGasCan,
         NearItem:PropStaner,
         OnCanPerform:Recipe.OnCanPerform.CheckIfMachinePowered,
+
         Result:PropaneTank,
         Time:25,
         Sound:CanisterAddFuelFromGasPump,
@@ -27,6 +28,7 @@ module MCH
         AnimNode:RefuelGasCan,
         NearItem:PropStaner,
         OnCanPerform:Recipe.OnCanPerform.CheckIfMachinePowered,
+
         Result:PropaneTank,
         Time:25,
         Sound:CanisterAddFuelFromGasPump,
@@ -41,6 +43,7 @@ module MCH
         AnimNode:RefuelGasCan,
         NearItem:PropStaner,
         OnCanPerform:Recipe.OnCanPerform.CheckIfMachinePowered,
+
         Result:LargePropaneTank,
         Time:50,
         Sound:CanisterAddFuelFromGasPump,
@@ -48,4 +51,31 @@ module MCH
         NeedToBeLearn:false,
     }
 
+    recipe Forge Metal Sheet
+    {
+		MetalBar=4,
+		keep Hammer/BallPeenHammer/ClubHammer/HammerStone,
+		keep WeldingMask,
+		BlowTorch=3,
+
+		Result:SheetMetal=1,
+		Time:1000,
+		Category:MetalWelding,
+		SkillRequired:MetalWelding=3,
+    }
+
+    recipe Press Metal Bars
+    {
+		MetalBar=4,
+		NearItem:HydraulicPress,
+		AnimNode:Hydraulic,
+		OnCanPerform:Recipe.OnCanPerform.CheckIfMachinePowered,
+
+		Result:SheetMetal=1,
+		Time:100,
+		Category:Press,
+		Sound:Press,
+		CanBeDoneFromFloor:true,
+		NeedToBeLearn:false,
+    }
 }
