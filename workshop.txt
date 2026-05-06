@@ -1,7 +1,13 @@
 version=1
 id=3630473325
 title=MachinesII Fix
-description=Fixes mod integration issues for B41.78+.
+description=[b]Built for version B41.78+![/b]
+description=
+description=Adds new recipes and fixes some mod integration issues.
+description=
+description=* Extra metalworking recipes:
+description=  - Metal Bars to Metal Sheets via Propane Torch + Hammer
+description=  - Metal Bars to Metal Sheets via Hydraulic Press
 description=
 description=* Refill Propane tank recipes for:
 description=  - Empty Propane Tank from "Food Preservation Plus" mod
